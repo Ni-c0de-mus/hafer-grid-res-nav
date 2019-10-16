@@ -72,9 +72,98 @@ ul {
  list-style: none;
 }
 
+p {
+ font-size: 1.6rem;
+ padding: 1rem;
+}
+
 img {
  width: 100%;
  max-width: 100%;
  height: auto;
 }
+
+body {
+ margin: 0;
+ background: var(--carolina-blue);
+ color: var(--pale-chestnut);
+ font-size: 1.6rem;
+ font-family: var(--freckle-face);
+}
+
+/* Grid Wrapper */
+
+.grid-wrapper {
+ grid-template-columns: repeat(12, 1fr);
+ grid-template-rows: auto;
+ grid-gap: 1.6rem;
+}
+
+.masthead {
+ background: var(--black-olive);
+ padding: .5rem 1rem;
+}
+
+.masthead__inner {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.site__title h1 {
+ margin: .5rem;
+}
+
+.nav__list {
+ display: flex;
+ margin-left: 1rem;
+ padding: 0;
+ margin: 1rem;
+}
+
+.nav__item {
+ margin-left: 1.5rem;
+}
+
+.nav__link {
+ color: var(--magic-mint);
+ transition: color 650ms;
+}
+
+.nav__link:hover {
+ color: var(--carolina-blue);
+}
+
+/* Hero */
+
+.hero {
+ background: linear-gradient(135deg, rgba(47, 47, 47, 0.1), rgba(47, 47, 47, 0.2)),
+  url('../img/dark-leaves.jpg') center no-repeat;
+ background-size: cover;
+ height: 50vh;
+ display: flex;
+ align-items: center;
+ padding-left: 2rem;
+}
+
+.hero__inner {
+ max-width: 50vw;
+ display: flex;
+ flex-direction: column;
+}
+
+.hero__inner h2 {
+ font-size: 4rem;
+ text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+/* Features */
+
+
+
 
